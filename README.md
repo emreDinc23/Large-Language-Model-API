@@ -1,8 +1,7 @@
-# Natural Language to SQL Query Converter
+# Language Model to Edit Turkish Spelling Errors
 
-This is a full stack app that converts natural language English to SQL queries using OpenAI's GPT-3.5 architecture and text completion API. The app has a client and a server, each with its own npm packages. 
 
-The tutorial to build this application is [on youtube](https://youtu.be/kjUSOa_KOts).
+
 
 ## Getting Started
 
@@ -43,7 +42,5 @@ npm start
 ## Technologies
 
 The front end is built with React, and the back end is built with Node.js and Express.
-
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
 
