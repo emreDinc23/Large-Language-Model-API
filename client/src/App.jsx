@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import sqlServer from "./assets/sql-server.png";
+import sqlServer from "./assets/Herkez.png";
 import { useState } from "react";
 
 export default function App() {
@@ -27,19 +27,28 @@ export default function App() {
 
   return (
     <main className={styles.main}>
-      <img src={sqlServer} className={styles.icon} alt="SQL server" />
-      <h3>Generate SQL</h3>
-      <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          name="query-description"
-          placeholder="Describe your query"
-          value={userPrompt}
-          onChange={(e) => setUserPrompt(e.target.value)}
-        />
-        <input type="submit" value="Generate query" />
+      <img src={sqlServer} className={styles.icon} alt="Türkçe Yazım Düzenleyici" />
+      <form onSubmit={onSubmit} className={styles.form}>
+        <div className={styles.textareaContainer}>
+          <textarea
+            name="query-description"
+            placeholder="Düzenlenecek metni girin"
+            value={userPrompt}
+            onChange={(e) => setUserPrompt(e.target.value)}
+            className={styles.textarea}
+            rows={20}
+          />
+          <textarea
+            
+            value={sqlQuery}
+            readOnly // ReadOnly olarak işaretlenmiş
+            className={styles.textarea}
+            rows={20}
+            
+          />
+        </div>
+        <input type="submit" value="Yazım Düzenle" className={styles.button} />
       </form>
-      <pre>{sqlQuery}</pre>
     </main>
   );
 }
