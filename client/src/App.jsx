@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import sqlServer from "./assets/Herkez.png";
+import herkezİMG from "./assets/Herkez.png";
 import { useState } from "react";
 
 export default function App() {
@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <main className={styles.main}>
-      <img src={sqlServer} className={styles.icon} alt="Türkçe Yazım Düzenleyici" />
+      <img src={herkezİMG} className={styles.icon} alt="HerkeZ Hata Yapabilir" />
       <form onSubmit={onSubmit} className={styles.form}>
         <div className={styles.textareaContainer}>
           <textarea

@@ -27,8 +27,8 @@ const generate = async (queryDescription) => {
     return response.data.choices[0].message.content;
   }
 
-  const sqlQuery = await chatGPT(queryDescription);
-  return sqlQuery;
+  const duzenlenenMetin = await chatGPT(queryDescription);
+  return duzenlenenMetin;
 
 };
 
